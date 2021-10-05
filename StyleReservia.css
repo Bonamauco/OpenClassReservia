@@ -1,0 +1,567 @@
+@font-face {
+  font-family: "ambleregular";
+  src: url("fonts/Amble-Regular-webfont.eot");
+  src: url("fonts/Amble-Regular-webfont.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Amble-Regular-webfont.woff2") format("woff2"),
+    url("fonts/Amble-Regular-webfont.woff") format("woff"),
+    url("fonts/Amble-Regular-webfont.ttf") format("truetype"),
+    url("fonts/Amble-Regular-webfont.svg#ambleregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: white;
+  font-size: 20px;
+  margin: 0 25%;
+}
+
+#bloc_page {
+  max-width: 1600px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "ambleregular";
+}
+
+header {
+  height: 80px;
+  font-family: "ambleregular";
+  width: 100%;
+}
+
+header img {
+  width: 70px;
+  height: 40px;
+  margin-top: 0px;
+  position: absolute;
+}
+
+.accueil {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.8rem;
+  color: rgb(0, 110, 255);
+}
+
+.accueil a {
+  text-decoration: none;
+  color: blue;
+}
+
+.accueil a:hover {
+  text-decoration-style: none;
+  color: rgb(63, 62, 62);
+}
+
+header ul {
+  display: flex;
+  top: 15px;
+  margin-bottom: 0px;
+  position: relative;
+  padding-left: 0px;
+}
+
+header li {
+  margin-left: 50px;
+  list-style-type: none;
+}
+
+header h2 {
+  display: flex;
+  font-size: 0.9rem;
+  margin: auto;
+  justify-content: flex-start;
+  margin-top: 25px;
+}
+
+header p {
+  font-size: 0.6rem;
+  align-items: flex-start;
+  margin-top: 5px;
+}
+
+/*barre de recherche*/
+
+#nav {
+  display: flex;
+  width: 1000px;
+  max-height: 55px;
+  margin-top: 5px;
+  padding-top: 5px;
+  margin: 0px;
+}
+
+#barre_de_recherche {
+  display: flex;
+}
+
+#search {
+  border-radius: 0px 0px 0px 0-px;
+  height: 35px;
+  width: 200px;
+  margin-right: 0px;
+  border-style: solid;
+  border-left: none;
+  border-width: 1px;
+  border-color: rgb(238, 234, 234);
+  margin-left: 0px;
+}
+
+#geo_logo {
+  display: flex;
+  height: 33px;
+  width: auto;
+  border-style: solid;
+  border-right: none;
+  border-width: 1px;
+  border-color: rgb(219, 223, 226);
+  border-radius: 8px 0px 0px 8px;
+}
+
+#recherche {
+  border-radius: 0px 8px 8px 0px;
+  height: 35px;
+  width: 100px;
+  margin-left: 0px;
+  background-color: rgb(0, 110, 255);
+  font-weight: bold;
+  color: aliceblue;
+  border-style: none;
+  cursor: pointer;
+}
+
+/*Filtres*/
+
+.margFiltre {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.filtre {
+  display: flex;
+  align-items: center;
+  margin-left: 3%;
+  font-size: 0.9rem;
+  border-radius: 18px;
+  border: 2px solid rgb(209, 203, 203);
+  background-color: white;
+  cursor: pointer;
+}
+
+.divi {
+  background-color: #d1ddf3;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+}
+
+.iFont {
+  font-size: 15px;
+  margin-left: 23%;
+  margin-top: 25%;
+  color: rgb(27, 112, 240);
+}
+
+.titleFiltre {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#information {
+  display: flex;
+  align-items: center;
+  font-size: 0.7rem;
+  margin-bottom: 5px;
+}
+
+#information_logo {
+  display: flex;
+  width: 25px;
+  margin-right: 15px;
+}
+
+#information h5 {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 0.7rem;
+  font-weight: lighter;
+  margin-top: 5px;
+}
+
+/*section hebergement*/
+
+#SectionHebergement {
+  display: flex;
+  height: 400px;
+  width: 100%;
+}
+
+#hebergement {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(228, 228, 228);
+  height: 120%;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+
+#hebergement h2 {
+  font-size: 1.2rem;
+  margin-left: 28px;
+  margin-top: 25px;
+  height: 10px;
+}
+
+.sousSectionHebergement {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.vignette {
+  align-content: center;
+  width: 30%;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 2px 2px 2px 2px rgb(211, 207, 207);
+  cursor: pointer;
+}
+
+.vignette img {
+  display: flex;
+  margin-left: 3px;
+  margin-top: 3px;
+  width: 97%;
+  justify-content: center;
+  height: 95px;
+  border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
+}
+
+.vignette h3 {
+  font-size: 0.7rem;
+  margin-top: 0px;
+}
+
+.priceMarseille {
+  font-size: 0.7rem;
+  margin-top: 0px;
+  margin-left: 10px;
+}
+
+.starsiRate {
+  color: rgb(27, 112, 240);
+  margin-left: 5px;
+  font-size: 15px;
+  margin-bottom: 7px;
+}
+
+.iRate {
+  display: flex;
+}
+
+.iRateNone {
+  color: rgb(214, 211, 211);
+}
+
+.viewMore {
+  font-weight: bold;
+  margin-left: 25px;
+  font-size: 0.8rem;
+  margin-top: 38px;
+}
+
+/*Aside*/
+
+.sousSection_les_plus_populaires {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 35%;
+  height: 120%;
+  margin-left: 55px;
+  margin-top: 8px;
+  border-radius: 20px;
+  background-color: rgb(228, 228, 228);
+}
+
+.share {
+  justify-content: right;
+  margin-left: 150px;
+  cursor: pointer;
+}
+
+.sousSection_les_plus_populaires h2 {
+  font-size: 1em;
+  margin-left: 40px;
+  margin-top: 23px;
+  align-items: flex-start;
+}
+
+.les_plus_populaires {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 95%;
+  height: 19%;
+  margin-left: 15%;
+  margin-top: 13px;
+  border-width: 170px;
+  padding: 3px;
+  padding-right: 80px;
+  background-color: white;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 2px 2px 2px 2px rgb(211, 207, 207);
+  cursor: pointer;
+}
+
+.les_plus_populaires img {
+  display: flex;
+  object-fit: cover;
+  width: 65%;
+  height: 110px;
+  margin-left: 47px;
+  border-radius: 15px 0px 0px 15px;
+}
+
+.description {
+  width: 145px;
+}
+
+.pricePop {
+  font-size: 0.7rem;
+  flex-wrap: wrap;
+  margin-left: 10px;
+}
+
+.starsiRatePop {
+  color: rgb(27, 112, 240);
+  margin-left: 5px;
+  font-size: 15px;
+  position: absolute;
+  margin-top: 25px;
+}
+/*section Activité*/
+
+#SectionActivité {
+  display: flex;
+  width: 100%;
+  max-width: 1600px;
+  margin-top: 80px;
+}
+
+#activité {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 400px;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+
+#activité h2 {
+  font-size: 1em;
+  margin-top: 0px;
+  height: 25px;
+}
+
+.vignette_activité h3 {
+  font-size: 0.7em;
+  margin-left: 15px;
+  margin-bottom: 0px;
+  align-items: baseline;
+  height: 20px;
+}
+
+.sousSectionActivité {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.vignette_activité {
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 25px;
+  border-width: 170px;
+  margin-bottom: 25px;
+  padding-bottom: 3px;
+  background-color: white;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 2px 2px 2px 2px rgb(211, 207, 207);
+  cursor: pointer;
+}
+
+.vignette_activité img {
+  width: 210px;
+  height: 90px;
+  border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
+}
+
+#vieux_port {
+  display: flex;
+  width: 23%;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px rgb(211, 207, 207);
+  border-radius: 15px 15px 15px 15px;
+  height: 280px;
+  cursor: pointer;
+}
+
+#vieux_port img {
+  background-color: white;
+  border-radius: 15px 15px 15px 15px;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+}
+
+#vieux_port h3 {
+  font-size: 0.7rem;
+  margin-left: 15px;
+}
+
+.vignette_activité_pomègues {
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  height: 150px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 25px;
+  border-width: 170px;
+  margin-bottom: 15px;
+  padding-bottom: 3px;
+  background-color: white;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 2px 2px 2px 2px rgb(211, 207, 207);
+  cursor: pointer;
+}
+
+.vignette_activité_pomègues img {
+  width: 220px;
+  height: 120px;
+  border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
+}
+
+.vignette_activité_pomègues h3 {
+  font-size: 0.7rem;
+  margin-left: 15px;
+}
+
+.vignette_activité_frioul {
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 112px;
+  margin-left: 25px;
+  border-width: 170px;
+  margin-bottom: 25px;
+  padding-bottom: 3px;
+  background-color: white;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 2px 2px 2px 2px rgb(211, 207, 207);
+  cursor: pointer;
+}
+
+.vignette_activité_frioul img {
+  width: 220px;
+  height: 80px;
+  border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
+}
+
+.vignette_activité_frioul h3 {
+  font-size: 0.7rem;
+  margin-left: 15px;
+}
+
+#calanques {
+  display: flex;
+  margin-left: 25px;
+  margin-top: 0px;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px rgb(211, 207, 207);
+  border-radius: 15px 15px 15px 15px;
+  height: 280px;
+  width: 23%;
+  cursor: pointer;
+}
+
+#calanques img {
+  background-color: white;
+  border-radius: 15px 15px 15px 15px;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+}
+
+#calanques h3 {
+  font-size: 0.7em;
+  margin-left: 15px;
+}
+
+/*Footer*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 1600px;
+  width: 100%;
+  background-color: rgb(247, 243, 243);
+  height: 150px;
+  font-family: "ambleregular";
+}
+
+.lst {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 0px;
+}
+
+.lst h3 {
+  margin-left: 40px;
+}
+
+footer h3 {
+  font-size: 0.7em;
+  font-weight: bold;
+  flex-direction: column;
+  margin-left: 0px;
+}
+
+footer ul {
+  margin-right: 145px;
+  list-style-type: none;
+}
+
+footer li {
+  font-size: 0.7em;
+  margin-top: 5px;
+  cursor: pointer;
+}
